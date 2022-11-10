@@ -20,6 +20,10 @@ body {
     overflow: hidden;
     scroll-behavior: smooth;
 }
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior:  auto;
+}
 .wrapper {
     max-width: 1200px;
     position: relative;
