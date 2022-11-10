@@ -24,6 +24,10 @@ body {
     cursor: grab;
     scroll-behavior:  auto;
 }
+.carousel.dragging img{
+pointer-events: none;
+
+}
 .wrapper {
     max-width: 1200px;
     position: relative;
