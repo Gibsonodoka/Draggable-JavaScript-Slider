@@ -1,7 +1,14 @@
 const carousel = document.querySelector(".carousel");
+arrowIcons = document.querySelectorAll(".wrapper i");
 
 let isDragStart = false, prevPageX, prevScrollLeft;
 
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", ()=> {
+        console.log(icon);
+    })
+} ) 
+    
 const dragStart = (e) => {
     isDragStart = true;
     prevPageX = e.pageX;
