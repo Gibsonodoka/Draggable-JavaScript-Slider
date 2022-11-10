@@ -3,7 +3,7 @@ firstImg = carousel.querySelectorAll("img") [0];
 arrowIcons = document.querySelectorAll(".wrapper i");
 
 let isDragStart = false, prevPageX, prevScrollLeft;
-
+let firstImgWidth = firstImg.clientWidth + 14;
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", ()=> {
         console.log(icon);
