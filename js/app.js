@@ -2,13 +2,14 @@ const carousel = document.querySelector(".carousel");
 
 let isDragStart = false, prevPageX, prevScrollLeft;
 
-const dragStart = () => {
+const dragStart = (e) => {
     isDragStart = true;
     prevPageX = e.pageX;
     prevScrollLeft = carousel.scrollLeft;
 }
 
 const dragging = (e) => {
+
     if(!isDragStart) return;
     e.previousDefault();
     let positionDiff = e.pageX - prevPageX;
