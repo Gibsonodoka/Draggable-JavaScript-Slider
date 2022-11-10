@@ -21,6 +21,16 @@ body {
 .wrapper {
     max-width: 1200px;
 }
+.wrapper i {
+    height: 46px;
+    width: 46px;
+    background: #fff;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
 .carousel img {
 height: 340px;
 width: calc(100% / 3);
