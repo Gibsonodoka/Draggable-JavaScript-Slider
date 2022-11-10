@@ -16,6 +16,7 @@ body {
     font-size: 0px;
     cursor: pointer;
     white-space: nowrap;
+    overflow: hidden;
 }
 .wrapper {
     max-width: 1200px;
@@ -24,6 +25,9 @@ body {
 height: 340px;
 width: calc(100% / 3);
 object-fit:cover;
+margin-left: 14px;
 }
 
-.carousel .img: :first-child
+.carousel img: first-child {
+    margin-left: 0px;
+}
