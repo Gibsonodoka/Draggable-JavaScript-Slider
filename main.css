@@ -48,6 +48,7 @@ pointer-events: none;
 
 .wrapper i:first-child {
 left: -23px;
+display: none;
 }
 
 .wrapper i:last-child {
