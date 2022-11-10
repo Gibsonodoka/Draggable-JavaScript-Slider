@@ -18,6 +18,7 @@ body {
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 .wrapper {
     max-width: 1200px;
