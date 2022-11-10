@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(65, 65, 71);
+}
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.wrapper {
+    max-width: 1200px;
+}
+.carousel img {
+height: 340px;
+width: calc(100% / 3);
+object-fit:cover;
+}
+
+.carousel .img: :first-child
