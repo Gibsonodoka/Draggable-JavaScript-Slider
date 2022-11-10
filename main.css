@@ -30,7 +30,17 @@ body {
     border-radius: 50%;
     cursor: pointer;
     font-size: 1.2rem;
+    position: absolute;
 }
+
+.wrapper i:first-child {
+left: -23px;
+}
+
+.wrapper i:last-child {
+right: -23px;
+}
+
 .carousel img {
 height: 340px;
 width: calc(100% / 3);
