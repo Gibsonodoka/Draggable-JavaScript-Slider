@@ -2,7 +2,7 @@ const carousel = document.querySelector(".carousel");
 firstImg = carousel.querySelectorAll("img") [0];
 arrowIcons = document.querySelectorAll(".wrapper i");
 
-let isDragStart = false, prevPageX, prevScrollLeft;
+let isDragStart = false, prevPageX, prevScrollLeft, positionDiff;
 
 
 
@@ -18,7 +18,11 @@ arrowIcons.forEach(icon => {
         setTimeout(() => showHideIcons(),);
     })
 } ) 
-    
+   
+const autoSlide = () => {
+
+}
+
 const dragStart = (e) => {
     isDragStart = true;
     prevPageX = e.pageX || e.touches[0].pageX;
@@ -30,7 +34,7 @@ const dragging = (e) => {
     if(!isDragStart) return;
     e.previousDefault();
     carousel.classList.add("dragging");
-    let positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
     carousel.scrollLeft = prevScrollLeft - positionDiff;
     showHideIcons();
 }
