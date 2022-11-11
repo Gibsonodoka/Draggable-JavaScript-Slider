@@ -38,6 +38,7 @@ const dragging = (e) => {
 const dragStop = () => {
     isDragStart = false;
     carousel.classList.remove("dragging");
+    autoSlide();
 }
 
 carousel.addEventListener("mousedown", dragStart);
