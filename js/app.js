@@ -30,7 +30,7 @@ const dragging = (e) => {
     if(!isDragStart) return;
     e.previousDefault();
     carousel.classList.add("dragging");
-    let positionDiff = e.pageX - prevPageX;
+    let positionDiff = (e.pageX || e.touched[0].pageX) - prevPageX;
     carousel.scrollLeft = prevScrollLeft - positionDiff;
     showHideIcons();
 }
