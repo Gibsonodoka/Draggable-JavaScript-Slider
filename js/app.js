@@ -23,7 +23,12 @@ const autoSlide = () => {
     positionDiff = Math.abs(positionDiff);
     let firstImgWidth = firstImg.clientWidth + 14;
     let valDifference = firstImgWidth - positionDiff;
-    console.log(positionDiff);
+
+if(carousel.scrollLeft > prevScrollLeft) {
+    return console.log("user is scrolling to the right");
+}
+console.log("user is scrolling to the left");
+    
 }
 
 const dragStart = (e) => {
