@@ -25,10 +25,9 @@ const autoSlide = () => {
     let valDifference = firstImgWidth - positionDiff;
 
 if(carousel.scrollLeft > prevScrollLeft) {
-    return console.log("user is scrolling to the right");
+    return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
 }
-console.log("user is scrolling to the left");
-    
+carousel.scrollLeft -= positionDiff > firstImgWidth / 3? valDifference : -positionDiff;
 }
 
 const dragStart = (e) => {
