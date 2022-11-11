@@ -21,7 +21,7 @@ arrowIcons.forEach(icon => {
     
 const dragStart = (e) => {
     isDragStart = true;
-    prevPageX = e.pageX;
+    prevPageX = e.pageX || e.touched[0].pageX;
     prevScrollLeft = carousel.scrollLeft;
 }
 
