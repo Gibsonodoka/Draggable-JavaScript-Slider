@@ -20,7 +20,7 @@ arrowIcons.forEach(icon => {
 } ) 
    
 const autoSlide = () => {
-
+    console.log(positionDiff);
 }
 
 const dragStart = (e) => {
