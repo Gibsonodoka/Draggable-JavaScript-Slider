@@ -20,6 +20,8 @@ arrowIcons.forEach(icon => {
 } ) 
    
 const autoSlide = () => {
+
+    if (carousel.scrollLeft == (carousel.scrollWidth - carousel.clientWidth)) return;
     positionDiff = Math.abs(positionDiff);
     let firstImgWidth = firstImg.clientWidth + 14;
     let valDifference = firstImgWidth - positionDiff;
