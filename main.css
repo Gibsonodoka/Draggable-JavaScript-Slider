@@ -71,7 +71,7 @@ margin-left: 14px;
         width: calc(100% /2);
     }
 }
-
+/* Mobile screen*/
 @media screen and (max-width:550px ) {
     .carousel img {
         width: 100%;
