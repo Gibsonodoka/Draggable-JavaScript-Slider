@@ -63,3 +63,4 @@ carousel.addEventListener("touchmove", dragStart);
 carousel.addEventListener("mouseup", dragStop);
 carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchend", dragStart);
+// slider 
